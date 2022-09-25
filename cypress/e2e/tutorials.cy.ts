@@ -1,9 +1,6 @@
-import tutorialsJson from "../../data/tutorials.json"
-const { _ } = Cypress
-
 describe("Tutorials Landing Page", function () {
-  beforeEach(function () {
-    cy.visit("/tutorials")
+  before(() => {
+    cy.visit("/")
   })
 
   it("renders all of the tutorials lessons", function () {

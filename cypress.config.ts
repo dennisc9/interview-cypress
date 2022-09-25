@@ -12,6 +12,6 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.ts').default(on, config)
     },
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'https://google.com',
   },
 })
